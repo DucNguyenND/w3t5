@@ -5,8 +5,27 @@
     <title>Title</title>
 </head>
 <body>
-<script>
-    confirm("....")
-</script>
+<h1>Convert between Metes and feet</h1>
+<input id="numb" value="">
+<button id="toFeet" type="button" onclick="toFeet()">Feet to Meters</button>
+<button id="toMetes" type="button" onclick="toMetes()">Meters to Feet</button>
+<p><span id="out"></span></p>
 </body>
 </html>
+
+<script>
+
+    function toFeet(){
+        let getNumb = parseFloat(document.getElementById('numb').value);
+        let showNumb;
+        // showNumb = 0.305*getNumb;
+        document.getElementById('out').innerText0 = 0.305*getNumb;
+    }
+    function toMetes(){
+        let getNumb = parseFloat(document.getElementById('numb').value);
+        let showNumb;
+        // showNumb = 3.279*getNumb;
+        document.getElementById('out').value = getNumb*3.279;
+    }
+
+</script>
