@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Meter</label><input type="number" id="met" onchange="mett(this.value)" oninput="mett(this.value)">
+<p>Feet: <span id="feet1"> </span></p>
+<br>
+<label>Feet</label><input type="number1" id="feet" onchange="feet(this.value)" oninput="feet(this.value)">
+<p>Meter: <span id="meter1"> </span></p>
+
+</body>
+</html>
+<script>
+    function mett(){
+        let a=parseFloat(document.getElementById("met").value)
+        // if(a=="") document.getElementById("feet1").innerText=0
+        document.getElementById("feet1").innerHTML=3.729*a
+
+    }
+    function feet(){
+        let a=parseFloat(document.getElementById("feet").value)
+        document.getElementById("meter1").innerHTML=0.305*a
+    }
+</script>
